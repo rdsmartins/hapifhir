@@ -1,8 +1,7 @@
 HAPI-FHIR Images
 
-**note** : there is no latest tag so don't use the *docker pull mimi50/hapi*
-* docker pull mimi50/hapi:2.3
-* docker pull mimi50/hapi:2.4
+* docker pull mimi50/hapifhir
+
 
 RUN:
 
