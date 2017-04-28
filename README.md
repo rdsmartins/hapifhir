@@ -6,10 +6,10 @@ HAPI-FHIR Images
 RUN:
 
 * run hapi-fhir exposing port:
-> docker run --name hapi  -p 8080:8080 mimi50/hapi:${verId} 
+> docker run --name hapi  -p 8080:8080 mimi50/hapifhir
 
 * To persist the data:
-> docker run --name hapi  -p 8080:8080 -v /your/host/hapi/directory:/opt/hapi-fhir/target mimi50/hapi:${verId} 
+> docker run --name hapi  -p 8080:8080 -v /your/host/hapi/directory:/opt/hapi-fhir/target mimi50/hapifhir
 
 * To enter the image shell:
 > docker exec -it  hapi /bin/bash
@@ -21,4 +21,4 @@ RUN:
 > http://0.0.0.0:8080
 
 * Example:
-> docker run --name hapi -p 8080:8080 -v /home/vagrant/docker/hapi/2.4:/opt/hapi-fhir/target mimi50/hapi:2.4
+> docker run --name hapi -p 8080:8080 -v /home/vagrant/docker/hapi/2.4:/opt/hapi-fhir/target mimi50/hapifhir
