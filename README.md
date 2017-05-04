@@ -1,24 +1,24 @@
-HAPI-FHIR Images
+# HAPI-FHIR Images  #
 
-* docker pull mimi50/hapifhir
+### docker pull mimi50/hapifhir ###
 
 
-RUN:
+## RUN: ##
 
-* run hapi-fhir exposing port:
+#### run hapi-fhir exposing port: ####
 > docker run --name hapi  -p 8080:8080 mimi50/hapifhir
 
-* To persist the data:
+#### To persist the data: ####
 > docker run --name hapi  -p 8080:8080 -v /your/host/hapi/directory:/opt/hapi-fhir/target mimi50/hapifhir
 
-* To enter the image shell:
+#### To enter the image shell: ####
 > docker exec -it  hapi /bin/bash
 
-* To stop the image:
+#### To stop the image: ####
 > docker stop hapi
 
-* To view the Hapi Fhir web admin
+#### To view the Hapi Fhir web admin ####
 > http://0.0.0.0:8080
 
-* Example:
+#### Example: ####
 > docker run --name hapi -p 8080:8080 -v /home/vagrant/docker/hapi/2.4:/opt/hapi-fhir/target mimi50/hapifhir
